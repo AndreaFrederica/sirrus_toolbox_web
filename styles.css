@@ -76,7 +76,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* 保持桌面上一行显示 */
     gap: 1rem;
 }
 
@@ -94,19 +94,85 @@ body {
 }
 
 .language-select {
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--border-color);
+    padding: 0.45rem 0.9rem;
+    padding-left: 2.2rem; /* 为左侧图标留出空间 */
+    border: none; /* 无边框 */
     border-radius: 0.5rem;
-    background-color: var(--bg-card);
+    background-color: transparent; /* 透明背景 */
     color: var(--text-primary);
     font-size: 0.875rem;
     cursor: pointer;
-    transition: border-color var(--transition-speed);
+    transition: color var(--transition-speed), background-color var(--transition-speed);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
 }
 
 .language-select:hover {
-    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
+
+/* 在深色主题中确保选择文字可见 */
+[data-theme="dark"] .language-select {
+    color: var(--text-primary);
+}
+
+/* 使容器可定位以放置自定义箭头 */
+.language-selector {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 自定义下拉箭头（替换系统默认） */
+.language-selector::after {
+    content: '\25BE';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+/* 语言图标 */
+.language-icon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* 隐藏IE/Edge默认箭头 */
+.language-select::-ms-expand {
+    display: none;
+}
+
+/* 聚焦时的外观（模拟展开卡片视觉） */
+.language-select:focus {
+    background-color: rgba(255,255,255,0.02);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    border-radius: 6px;
+}
+
+/* 尝试设置 option 的样式（不同浏览器支持不同） */
+.language-select option {
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+}
+
+/* 选中项样式（部分浏览器会应用） */
+.language-select option:checked {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+/* 提示：原生下拉的展开列表样式受浏览器控制，不能在所有浏览器中完全自定义。
+   若需完全自定义（圆角、阴影、项 hover 颜色、动画），建议使用自定义下拉组件（HTML+JS），我可以帮实现。*/
 
 .theme-toggle {
     background: none;
@@ -144,9 +210,11 @@ body {
 /* 工具网格布局 */
 .tools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
     margin-bottom: 2rem;
+    align-items: stretch;
+    grid-auto-rows: 1fr; /* 保持每一行卡片高度一致 */
 }
 
 /* 区域标题 */
@@ -182,15 +250,34 @@ body {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
-    margin-top: auto;
+    margin-top: 1rem;
+    justify-content: center; /* 按钮组居中 */
+    align-items: center;
+    width: 100%; /* 占满卡片宽度，便于居中 */
 }
 
 .tool-links .tool-link {
-    flex: 1;
-    min-width: 100px;
+    flex: none;
+    min-width: 110px;
     text-align: center;
     font-size: 0.875rem;
     padding: 0.5rem 1rem;
+    align-self: center; /* 按钮在卡片中居中 */
+}
+
+/* 单个直接放在卡片内的链接也要居中 */
+.tool-card > .tool-link {
+    display: inline-flex;
+    margin: 1rem auto 0 auto;
+    justify-content: center;
+    min-width: 120px;
+    align-self: center !important; /* 强制单链接居中 */
+}
+
+/* 让同一组按钮宽度更一致（可根据需要调整min-width） */
+.tool-links .tool-link, .tool-card > .tool-link {
+    width: 140px; /* 统一桌面/平板按钮宽度 */
+    min-width: 120px;
 }
 
 .mirror-link {
@@ -248,6 +335,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: space-between; /* 使内容在卡片里垂直分布相等 */
+    align-items: center; /* 内容水平居中 */
+    text-align: center; /* 文本居中 */
+    min-height: 260px; /* 保证桌面端卡片高度一致 */
 }
 
 .tool-card:hover {
@@ -259,8 +350,8 @@ body {
 .tool-icon {
     font-size: 2.5rem;
     color: var(--accent-color);
-    margin-bottom: 1rem;
-    display: flex;
+    margin: 0 0 0.75rem 0;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 4rem;
@@ -282,8 +373,9 @@ body {
 
 .tool-description {
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
+    margin-bottom: 1.25rem;
+    flex-grow: 0;
+    max-width: 36rem; /* 防止极长文本影响布局 */
 }
 
 .tool-link {
@@ -293,11 +385,10 @@ body {
     background-color: var(--accent-color);
     color: white;
     text-decoration: none;
-    padding: 0.75rem 1.25rem;
+    padding: 0.6rem 1rem;
     border-radius: 0.5rem;
     font-weight: 500;
     transition: background-color var(--transition-speed), transform var(--transition-speed);
-    align-self: flex-start;
 }
 
 .tool-link:hover {
@@ -340,6 +431,7 @@ body {
     
     .tool-card {
         padding: 1.25rem;
+        min-height: 220px; /* 移动端降低最小高度 */
     }
     
     .intro-text {
@@ -358,6 +450,7 @@ body {
     
     .tool-card {
         padding: 1rem;
+        min-height: auto; /* 最小化高度限制以适配非常窄屏 */
     }
     
     .tool-icon {
