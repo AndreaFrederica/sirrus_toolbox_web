@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page-title">Andrea的在线和离线工具箱</title>
+    
+    <!-- SEO优化 -->
+    <meta name="description" content="Andrea的在线和离线工具箱，提供视频转换、小说写作助手、图片裁剪等多种实用工具">
+    <meta name="keywords" content="在线工具,工具箱,视频转换,小说助手,图片裁剪,检查单,博客">
+    <meta name="author" content="Andrea">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sirrus.cc/">
+    <meta property="og:title" data-i18n="page-title" content="Andrea的在线和离线工具箱">
+    <meta property="og:description" content="Andrea的在线和离线工具箱，提供视频转换、小说写作助手、图片裁剪等多种实用工具">
+    <meta property="og:image" content="https://sirrus.cc/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sirrus.cc/">
+    <meta property="twitter:title" data-i18n="page-title" content="Andrea的在线和离线工具箱">
+    <meta property="twitter:description" content="Andrea的在线和离线工具箱，提供视频转换、小说写作助手、图片裁剪等多种实用工具">
+    <meta property="twitter:image" content="https://sirrus.cc/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+    
+    <!-- 样式表 -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo" data-i18n="main-title">Andrea的在线和离线工具箱</h1>
+                <div class="header-controls">
+                    <div class="language-selector">
+                        <select id="language-select" class="language-select">
+                            <option value="zh-CN">简体中文</option>
+                            <option value="zh-TW">繁體中文</option>
+                            <option value="en">English</option>
+                            <option value="ja">日本語</option>
+                        </select>
+                    </div>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
+                        <i class="fas fa-moon" id="theme-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="intro">
+                <p class="intro-text" data-i18n="intro-text">
+                    欢迎使用Andrea的工具箱，这里收集了各种实用的在线工具，帮助您提高工作效率。
+                </p>
+            </section>
+
+            <section class="tools-section">
+                <h2 class="section-title" data-i18n="online-tools-title">在线工具</h2>
+                <div class="tools-grid">
+                    <div class="tool-card" data-tool="v2mp">
+                        <div class="tool-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-v2mp-title">视频/GIF转动态照片</h3>
+                        <p class="tool-description" data-i18n="tool-v2mp-desc">将视频或GIF转换为动态照片格式</p>
+                        <div class="tool-links">
+                            <a href="https://v2mp.sirrus.cc" class="tool-link" target="_blank" data-i18n="tool-visit">访问工具</a>
+                            <a href="https://github.com/AndreaFrederica/video2mjpg_web" class="tool-link github-link" target="_blank" data-i18n="tool-view-github">GitHub</a>
+                            <a href="https://github.com/AndreaFrederica/video2ajpg" class="tool-link backend-link" target="_blank" data-i18n="tool-backend">后端</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-tool="anh">
+                        <div class="tool-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-anh-title">小说助手</h3>
+                        <p class="tool-description" data-i18n="tool-anh-desc">VSCode写小说插件，提供专业的写作环境</p>
+                        <div class="tool-links">
+                            <a href="https://anh.sirrus.cc" class="tool-link" target="_blank" data-i18n="tool-visit">访问工具</a>
+                            <a href="https://github.com/AndreaFrederica/andrea-novel-helper" class="tool-link github-link" target="_blank" data-i18n="tool-view-github">GitHub</a>
+                            <a href="https://github.com/AndreaFrederica/Roo-Code-Chat" class="tool-link component-link" target="_blank" data-i18n="tool-anh-chat">聊天组件</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-tool="lite-editor">
+                        <div class="tool-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-lite-editor-title">小说助手网页编辑器</h3>
+                        <p class="tool-description" data-i18n="tool-lite-editor-desc">轻量级的在线小说编辑器（开发中）</p>
+                        <a href="https://lite-editor.sirrus.cc" class="tool-link" target="_blank" data-i18n="tool-visit">访问工具</a>
+                    </div>
+
+                    <div class="tool-card" data-tool="imgcut">
+                        <div class="tool-icon">
+                            <i class="fas fa-crop"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-imgcut-title">表情包裁剪工具</h3>
+                        <p class="tool-description" data-i18n="tool-imgcut-desc">在线裁剪表情包图片，支持多种尺寸</p>
+                        <div class="tool-links">
+                            <a href="https://imgcut.sirrus.cc" class="tool-link mirror-link" target="_blank" data-i18n="tool-visit-mirror">镜像站</a>
+                            <a href="https://cut.maplex.top/" class="tool-link original-link" target="_blank" data-i18n="tool-visit-original">原站</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-tool="guides">
+                        <div class="tool-icon">
+                            <i class="fas fa-check-square"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-guides-title">在线检查单</h3>
+                        <p class="tool-description" data-i18n="tool-guides-desc">自定义检查单工具，支持多种场景</p>
+                        <div class="tool-links">
+                            <a href="https://guides.sirrus.cc" class="tool-link" target="_blank" data-i18n="tool-visit">访问工具</a>
+                            <a href="https://github.com/AndreaFrederica/AndreaGuideBook" class="tool-link github-link" target="_blank" data-i18n="tool-view-github">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card" data-tool="blog">
+                        <div class="tool-icon">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-blog-title">博客</h3>
+                        <p class="tool-description" data-i18n="tool-blog-desc">分享技术心得和生活感悟的个人博客</p>
+                        <a href="https://blog.sirrus.cc" class="tool-link" target="_blank" data-i18n="tool-visit">访问工具</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="opensource-section">
+                <h2 class="section-title" data-i18n="opensource-projects-title">开源项目</h2>
+                <div class="tools-grid">
+                    <div class="tool-card" data-tool="yggdrasil-proxy">
+                        <div class="tool-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-yggdrasil-proxy-title">Yggdrasil API代理</h3>
+                        <p class="tool-description" data-i18n="tool-yggdrasil-proxy-desc">简单的Yggdrasil API代理服务</p>
+                        <a href="https://github.com/AndreaFrederica/AndreaYggdrasilProxy" class="tool-link" target="_blank" data-i18n="tool-view-github">查看GitHub</a>
+                    </div>
+
+                    <div class="tool-card" data-tool="simple-routing">
+                        <div class="tool-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-simple-routing-title">简单路由脚本</h3>
+                        <p class="tool-description" data-i18n="tool-simple-routing-desc">动态路由管理方案，支持多线路故障切换</p>
+                        <a href="https://github.com/AndreaFrederica/simpleRoutingPy" class="tool-link" target="_blank" data-i18n="tool-view-github">查看GitHub</a>
+                    </div>
+
+                    <div class="tool-card" data-tool="scan-draft-paper">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-scan-draft-paper-title">扫描草稿纸模板</h3>
+                        <p class="tool-description" data-i18n="tool-scan-draft-paper-desc">根据扫描件自动生成单色草稿纸模板</p>
+                        <a href="https://github.com/AndreaFrederica?tab=repositories&type=source" class="tool-link" target="_blank" data-i18n="tool-view-github">查看GitHub</a>
+                    </div>
+
+                    <div class="tool-card" data-tool="paradox-mods-helper">
+                        <div class="tool-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-paradox-mods-helper-title">Paradox Mods Helper</h3>
+                        <p class="tool-description" data-i18n="tool-paradox-mods-helper-desc">Tampermonkey脚本，改进Paradox Mods网站体验</p>
+                        <a href="https://github.com/AndreaFrederica/FuckParadoxMods" class="tool-link" target="_blank" data-i18n="tool-view-github">查看GitHub</a>
+                    </div>
+
+                    <div class="tool-card" data-tool="create-train-control">
+                        <div class="tool-icon">
+                            <i class="fas fa-train"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-create-train-control-title">Create列车控制</h3>
+                        <p class="tool-description" data-i18n="tool-create-train-control-desc">Minecraft Mod，允许列车使用VVVF音效</p>
+                        <a href="https://github.com/AndreaFrederica/CreateTrainControl" class="tool-link" target="_blank" data-i18n="tool-view-github">查看GitHub</a>
+                    </div>
+
+                    <div class="tool-card" data-tool="papt">
+                        <div class="tool-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-papt-title">Papt</h3>
+                        <p class="tool-description" data-i18n="tool-papt-desc">在pacman和yay/paru上使用熟悉的apt命令</p>
+                        <a href="https://github.com/AndreaFrederica/papt" class="tool-link" target="_blank" data-i18n="tool-view-github">查看GitHub</a>
+                    </div>
+
+                    <div class="tool-card" data-tool="patchouli-js">
+                        <div class="tool-icon">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-patchouli-js-title">Patchouli.js</h3>
+                        <p class="tool-description" data-i18n="tool-patchouli-js-desc">Vue编写的HTML文档阅读器，支持单页和分页</p>
+                        <a href="https://github.com/AndreaFrederica/patchouli.js" class="tool-link" target="_blank" data-i18n="tool-view-github">查看GitHub</a>
+                    </div>
+
+                    <div class="tool-card" data-tool="andrea-wsio-python">
+                        <div class="tool-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-andrea-wsio-python-title">AndreaWSIO Python宿主</h3>
+                        <p class="tool-description" data-i18n="tool-andrea-wsio-python-desc">Minecraft插件系统的Python插件宿主实现</p>
+                        <a href="https://github.com/AndreaFrederica/Andrea_WSIO_PythonC" class="tool-link" target="_blank" data-i18n="tool-view-github">查看GitHub</a>
+                    </div>
+
+                    <div class="tool-card" data-tool="andrea-wsio-bukkit">
+                        <div class="tool-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="tool-title" data-i18n="tool-andrea-wsio-bukkit-title">AndreaWSIO Bukkit宿主</h3>
+                        <p class="tool-description" data-i18n="tool-andrea-wsio-bukkit-desc">AndreaWSIO的Bukkit宿主实现</p>
+                        <a href="https://github.com/AndreaFrederica/Andrea_WSIO_BukkitS" class="tool-link" target="_blank" data-i18n="tool-view-github">查看GitHub</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text" data-i18n="footer-text">
+                © 2025 Andrea的工具箱. 所有权利保留.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

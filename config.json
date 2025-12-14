@@ -1,0 +1,310 @@
+{
+  "site": {
+    "title": "Andrea的在线和离线工具箱",
+    "domain": "sirrus.cc",
+    "description": "Andrea的在线和离线工具箱，提供视频转换、小说写作助手、图片裁剪等多种实用工具",
+    "author": "Andrea",
+    "defaultLanguage": "zh-CN",
+    "defaultTheme": "auto"
+  },
+  "tools": [
+    {
+      "id": "v2mp",
+      "name": {
+        "zh-CN": "视频/GIF转动态照片",
+        "zh-TW": "影片/GIF轉動態照片",
+        "en": "Video/GIF to Live Photo",
+        "ja": "動画/GIFをライブ写真に変換"
+      },
+      "description": {
+        "zh-CN": "将视频或GIF转换为动态照片格式",
+        "zh-TW": "將影片或GIF轉換為動態照片格式",
+        "en": "Convert videos or GIFs to live photo format",
+        "ja": "動画やGIFをライブ写真形式に変換します"
+      },
+      "url": "https://v2mp.sirrus.cc",
+      "github": "https://github.com/AndreaFrederica/video2mjpg_web",
+      "backend": "https://github.com/AndreaFrederica/video2ajpg",
+      "icon": "fas fa-video",
+      "status": "active"
+    },
+    {
+      "id": "anh",
+      "name": {
+        "zh-CN": "小说助手",
+        "zh-TW": "小說助手",
+        "en": "Novel Assistant",
+        "ja": "小説アシスタント"
+      },
+      "description": {
+        "zh-CN": "VSCode写小说插件，提供专业的写作环境",
+        "zh-TW": "VSCode寫小說插件，提供專業的寫作環境",
+        "en": "VSCode plugin for novel writing, providing a professional writing environment",
+        "ja": "VSCodeの小説執筆プラグイン、プロの執筆環境を提供"
+      },
+      "url": "https://anh.sirrus.cc",
+      "github": "https://github.com/AndreaFrederica/andrea-novel-helper",
+      "chat": "https://github.com/AndreaFrederica/Roo-Code-Chat",
+      "icon": "fas fa-book",
+      "status": "active"
+    },
+    {
+      "id": "lite-editor",
+      "name": {
+        "zh-CN": "小说助手网页编辑器",
+        "zh-TW": "小說助手網頁編輯器",
+        "en": "Novel Assistant Web Editor",
+        "ja": "小説アシスタントWebエディタ"
+      },
+      "description": {
+        "zh-CN": "轻量级的在线小说编辑器（开发中）",
+        "zh-TW": "輕量級的在線小說編輯器（開發中）",
+        "en": "Lightweight online novel editor (in development)",
+        "ja": "軽量なオンライン小説エディタ（開発中）"
+      },
+      "url": "https://lite-editor.sirrus.cc",
+      "icon": "fas fa-edit",
+      "status": "development"
+    },
+    {
+      "id": "imgcut",
+      "name": {
+        "zh-CN": "表情包裁剪工具",
+        "zh-TW": "表情包裁剪工具",
+        "en": "Meme Cropping Tool",
+        "ja": "ミーム画像切り抜きツール"
+      },
+      "description": {
+        "zh-CN": "在线裁剪表情包图片，支持多种尺寸",
+        "zh-TW": "在線裁剪表情包圖片，支援多種尺寸",
+        "en": "Online meme image cropping tool with support for multiple sizes",
+        "ja": "多種サイズ対応のオンラインミーム画像切り抜きツール"
+      },
+      "url": "https://imgcut.sirrus.cc",
+      "originalUrl": "https://cut.maplex.top/",
+      "icon": "fas fa-crop",
+      "status": "active",
+      "type": "mirror"
+    },
+    {
+      "id": "guides",
+      "name": {
+        "zh-CN": "在线检查单",
+        "zh-TW": "在線檢查單",
+        "en": "Online Checklist",
+        "ja": "オンラインチェックリスト"
+      },
+      "description": {
+        "zh-CN": "自定义检查单工具，支持多种场景",
+        "zh-TW": "自定義檢查單工具，支援多種場景",
+        "en": "Custom checklist tool supporting various scenarios",
+        "ja": "様々なシーンに対応したカスタムチェックリストツール"
+      },
+      "url": "https://guides.sirrus.cc",
+      "github": "https://github.com/AndreaFrederica/AndreaGuideBook",
+      "icon": "fas fa-check-square",
+      "status": "active"
+    },
+    {
+      "id": "blog",
+      "name": {
+        "zh-CN": "博客",
+        "zh-TW": "部落格",
+        "en": "Blog",
+        "ja": "ブログ"
+      },
+      "description": {
+        "zh-CN": "分享技术心得和生活感悟的个人博客",
+        "zh-TW": "分享技術心得和生活感悟的個人部落格",
+        "en": "Personal blog sharing technical insights and life experiences",
+        "ja": "技術的な洞察と生活経験を共有する個人ブログ"
+      },
+      "url": "https://blog.sirrus.cc",
+      "icon": "fas fa-blog",
+      "status": "active"
+    }
+  ],
+  "opensourceProjects": [
+    {
+      "id": "yggdrasil-proxy",
+      "name": {
+        "zh-CN": "Yggdrasil API代理",
+        "zh-TW": "Yggdrasil API代理",
+        "en": "Yggdrasil API Proxy",
+        "ja": "Yggdrasil APIプロキシ"
+      },
+      "description": {
+        "zh-CN": "简单的Yggdrasil API代理服务",
+        "zh-TW": "簡單的Yggdrasil API代理服務",
+        "en": "Simple Yggdrasil API proxy service",
+        "ja": "シンプルなYggdrasil APIプロキシサービス"
+      },
+      "url": "https://github.com/AndreaFrederica/AndreaYggdrasilProxy",
+      "icon": "fas fa-network-wired",
+      "status": "active",
+      "language": "Python"
+    },
+    {
+      "id": "simple-routing",
+      "name": {
+        "zh-CN": "简单路由脚本",
+        "zh-TW": "簡單路由腳本",
+        "en": "Simple Routing Script",
+        "ja": "シンプルルーティングスクリプト"
+      },
+      "description": {
+        "zh-CN": "动态路由管理方案，通过Ping检测实现多线路故障切换，可替代mwan3。支持OpenWrt等Linux发行版",
+        "zh-TW": "動態路由管理方案，通過Ping檢測實現多線路故障切換，可替代mwan3。支援OpenWrt等Linux發行版",
+        "en": "Dynamic routing management with Ping-based multi-line failover, supports OpenWrt and other Linux distributions",
+        "ja": "Pingベースのマルチラインフェイルオーバー機能を備えた動的ルーティング管理、OpenWrtなどのLinuxディストリビューションに対応"
+      },
+      "url": "https://github.com/AndreaFrederica/simpleRoutingPy",
+      "icon": "fas fa-route",
+      "status": "active",
+      "language": "Python"
+    },
+    {
+      "id": "scan-draft-paper",
+      "name": {
+        "zh-CN": "扫描草稿纸模板",
+        "zh-TW": "掃描草稿紙模板",
+        "en": "Scan Draft Paper Template",
+        "ja": "スキャン草稿用紙テンプレート"
+      },
+      "description": {
+        "zh-CN": "根据扫描件自动或手动生成单色草稿纸模板",
+        "zh-TW": "根據掃描件自動或手動生成單色草稿紙模板",
+        "en": "Auto-generate or manually create monochrome draft paper templates from scans",
+        "ja": "スキャンから単色草稿用紙テンプレートを自動または手動で生成"
+      },
+      "url": "https://github.com/AndreaFrederica?tab=repositories&type=source",
+      "icon": "fas fa-file-pdf",
+      "status": "active"
+    },
+    {
+      "id": "paradox-mods-helper",
+      "name": {
+        "zh-CN": "Paradox Mods Helper",
+        "zh-TW": "Paradox Mods Helper",
+        "en": "Paradox Mods Helper",
+        "ja": "Paradox Mods Helper"
+      },
+      "description": {
+        "zh-CN": "Tampermonkey脚本，改进Paradox Mods网站体验，提供自动加载、解锁搜索等功能",
+        "zh-TW": "Tampermonkey腳本，改進Paradox Mods網站體驗，提供自動加載、解鎖搜尋等功能",
+        "en": "Tampermonkey userscript improving Paradox Mods website with auto-load, search unlock, and more",
+        "ja": "Paradox Modsウェブサイト体験を向上させるTampermonkeyスクリプト、自動ロード機能など搭載"
+      },
+      "url": "https://github.com/AndreaFrederica/FuckParadoxMods",
+      "icon": "fas fa-puzzle-piece",
+      "status": "active",
+      "language": "JavaScript"
+    },
+    {
+      "id": "create-train-control",
+      "name": {
+        "zh-CN": "Create列车控制",
+        "zh-TW": "Create列車控制",
+        "en": "Create Train Control",
+        "ja": "Create列車制御"
+      },
+      "description": {
+        "zh-CN": "Minecraft Mod，允许Create的列车使用VVVF音效，计划实现更细致的列车控制",
+        "zh-TW": "Minecraft Mod，允許Create的列車使用VVVF音效，計劃實現更細緻的列車控制",
+        "en": "Minecraft Mod enabling Create trains to use VVVF sound effects with advanced control",
+        "ja": "Minecraft Mod、Create列車がVVVF音声を使用でき、より細かい列車制御の実装を計画"
+      },
+      "url": "https://github.com/AndreaFrederica/CreateTrainControl",
+      "icon": "fas fa-train",
+      "status": "active",
+      "language": "Java"
+    },
+    {
+      "id": "papt",
+      "name": {
+        "zh-CN": "Papt",
+        "zh-TW": "Papt",
+        "en": "Papt",
+        "ja": "Papt"
+      },
+      "description": {
+        "zh-CN": "在pacman和yay/paru上使用熟悉的apt命令，提供跨平台包管理体验",
+        "zh-TW": "在pacman和yay/paru上使用熟悉的apt命令，提供跨平台包管理體驗",
+        "en": "Use familiar apt commands on pacman and yay/paru for cross-platform package management",
+        "ja": "pacmanおよびyay/paruで馴染みのあるaptコマンドを使用可能"
+      },
+      "url": "https://github.com/AndreaFrederica/papt",
+      "icon": "fas fa-terminal",
+      "status": "active",
+      "language": "Shell"
+    },
+    {
+      "id": "patchouli-js",
+      "name": {
+        "zh-CN": "Patchouli.js",
+        "zh-TW": "Patchouli.js",
+        "en": "Patchouli.js",
+        "ja": "Patchouli.js"
+      },
+      "description": {
+        "zh-CN": "基于Vue编写的HTML文档阅读器，支持单页和分页显示",
+        "zh-TW": "基於Vue編寫的HTML文檔閱讀器，支援單頁和分頁顯示",
+        "en": "Vue-based HTML document reader supporting single-page and paginated display",
+        "ja": "Vue製のHTMLドキュメントリーダー、シングルページとページング表示に対応"
+      },
+      "url": "https://github.com/AndreaFrederica/patchouli.js",
+      "icon": "fas fa-book-reader",
+      "status": "active",
+      "language": "Vue"
+    },
+    {
+      "id": "andrea-wsio-python",
+      "name": {
+        "zh-CN": "AndreaWSIO Python宿主",
+        "zh-TW": "AndreaWSIO Python宿主",
+        "en": "AndreaWSIO Python Host",
+        "ja": "AndreaWSIO Pythonホスト"
+      },
+      "description": {
+        "zh-CN": "Minecraft插件系统的Python插件宿主实现",
+        "zh-TW": "Minecraft插件系統的Python插件宿主實現",
+        "en": "Python plugin host implementation for Minecraft plugin system",
+        "ja": "Minecraftプラグインシステムのpythonプラグインホスト実装"
+      },
+      "url": "https://github.com/AndreaFrederica/Andrea_WSIO_PythonC",
+      "icon": "fas fa-cubes",
+      "status": "active",
+      "language": "Python"
+    },
+    {
+      "id": "andrea-wsio-bukkit",
+      "name": {
+        "zh-CN": "AndreaWSIO Bukkit宿主",
+        "zh-TW": "AndreaWSIO Bukkit宿主",
+        "en": "AndreaWSIO Bukkit Host",
+        "ja": "AndreaWSIO Bukkitホスト"
+      },
+      "description": {
+        "zh-CN": "AndreaWSIO的Bukkit宿主实现",
+        "zh-TW": "AndreaWSIO的Bukkit宿主實現",
+        "en": "Bukkit host implementation for AndreaWSIO",
+        "ja": "AndreaWSIOのBukkitホスト実装"
+      },
+      "url": "https://github.com/AndreaFrederica/Andrea_WSIO_BukkitS",
+      "icon": "fas fa-server",
+      "status": "active",
+      "language": "Java"
+    }
+  ],
+  "analytics": {
+    "enabled": false,
+    "googleAnalyticsId": "",
+    "baiduAnalyticsId": ""
+  },
+  "features": {
+    "darkMode": true,
+    "languageSelector": true,
+    "animations": true,
+    "keyboardShortcuts": true
+  }
+}
