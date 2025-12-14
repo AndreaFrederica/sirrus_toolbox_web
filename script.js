@@ -192,6 +192,9 @@ function init() {
     // 初始化主题
     initTheme();
     
+    // 初始化滚动隐藏功能
+    initScrollHide();
+    
     // 添加事件监听器
     addEventListeners();
 }
@@ -235,6 +238,26 @@ function initTheme() {
     
     // 应用主题
     applyTheme(theme);
+}
+
+// 初始化滚动隐藏功能
+function initScrollHide() {
+    let lastScrollTop = 0;
+    const header = document.querySelector('.header');
+    
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+            // 向下滚动且超过100px，隐藏header
+            header.classList.add('header-hidden');
+        } else {
+            // 向上滚动或回到顶部，显示header
+            header.classList.remove('header-hidden');
+        }
+        
+        lastScrollTop = scrollTop;
+    });
 }
 
 // 添加事件监听器
