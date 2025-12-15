@@ -42,7 +42,7 @@ const translations = {
         'tool-visit-original': '原站',
         'tool-view-github': '查看GitHub',
         'tool-backend': '后端',
-        'footer-text': '© 2024 Andrea的工具箱. 所有权利保留.'
+        'footer-text': '© 2025 Andrea Frederica. 所有权利保留.'
     },
     'zh-TW': {
         'page-title': 'Andrea的在線和離線工具箱',
@@ -86,7 +86,7 @@ const translations = {
         'tool-visit-original': '原站',
         'tool-view-github': '查看GitHub',
         'tool-backend': '後端',
-        'footer-text': '© 2024 Andrea的工具箱. 所有權利保留.'
+        'footer-text': '© 2025 Andrea Frederica. 所有權利保留.'
     },
     'en': {
         'page-title': "Andrea's Online and Offline Toolbox",
@@ -96,10 +96,10 @@ const translations = {
         'opensource-projects-title': 'Open Source Projects',
         'tool-v2mp-title': 'Video/GIF to Live Photo',
         'tool-v2mp-desc': 'Convert videos or GIFs to live photo format',
-        'tool-anh-title': 'Novel Assistant',
+        'tool-anh-title': 'Novel Helper',
         'tool-anh-desc': 'VSCode plugin for novel writing, providing a professional writing environment',
         'tool-anh-chat': 'Chat Component',
-        'tool-lite-editor-title': 'Novel Assistant Web Editor',
+        'tool-lite-editor-title': 'Novel Helper Web Editor',
         'tool-lite-editor-desc': 'Lightweight online novel editor (in development)',
         'tool-imgcut-title': 'Meme Cropping Tool',
         'tool-imgcut-desc': 'Online meme image cropping tool with support for multiple sizes',
@@ -130,7 +130,7 @@ const translations = {
         'tool-visit-original': 'Original',
         'tool-view-github': 'View on GitHub',
         'tool-backend': 'Backend',
-        'footer-text': '© 2024 Andrea\'s Toolbox. All rights reserved.'
+        'footer-text': '© 2025 Andrea Frederica. All rights reserved.'
     },
     'ja': {
         'page-title': 'Andreaのオンライン・オフラインツールボックス',
@@ -174,7 +174,7 @@ const translations = {
         'tool-visit-original': 'オリジナル',
         'tool-view-github': 'GitHubで見る',
         'tool-backend': 'バックエンド',
-        'footer-text': '© 2024 Andreaのツールボックス. すべての権利を保有。'
+        'footer-text': '© 2025 Andrea Frederica. すべての権利を保有。'
     }
 };
 
